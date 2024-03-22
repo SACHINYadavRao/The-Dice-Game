@@ -15,3 +15,12 @@ var randomImageSource2 = "images/dice" + randomNumber2 + ".png"; // images/dice1
 var image2 = document
   .querySelectorAll("img")[1]
   .setAttribute("src", randomImageSource2); // select the second <img> element in the HTML file. Set the source attribute of image2 to be equal to randomImageSource.
+
+// If player 1 wins.
+if (randomNumber1 > randomNumber2) {
+  document.querySelector("h1").innerHTML = "Player 1 Wins! 🥳";
+} else if (randomNumber2 > randomNumber1) {
+  document.querySelector("h1").innerHTML = "Player 2 Wins! 🥳";
+} else {
+  document.querySelector("h1").innerHTML = "It's a draw! 😐";
+}
