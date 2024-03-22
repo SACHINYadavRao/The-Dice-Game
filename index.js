@@ -19,8 +19,12 @@ var image2 = document
 // If player 1 wins.
 if (randomNumber1 > randomNumber2) {
   document.querySelector("h1").innerHTML = "Player 1 Wins! 🥳";
-} else if (randomNumber2 > randomNumber1) {
+}
+// If player 2 wins.
+else if (randomNumber2 > randomNumber1) {
   document.querySelector("h1").innerHTML = "Player 2 Wins! 🥳";
-} else {
+}
+// If there is a draw.
+else {
   document.querySelector("h1").innerHTML = "It's a draw! 😐";
 }
